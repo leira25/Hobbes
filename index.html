@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+  <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
   <meta name="description"
-    content="Dogjak Memecoin: Join Wojak Dog's meme crypto adventure! Grab $DOGJAK, explore memes, and dive into the Wojakverse.">
-  <meta name="keywords" content="Dogjak, Wojak Dog, memecoin, cryptocurrency, memes, Solana blockchain, Wojakverse">
-  <title>Dogjak Memecoin - Wojak Dog's Meme Quest</title>
-  <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    content="Hobbes Memecoin: Join Hobbes the Tiger's imaginative adventures! Grab $HOBBES, explore fun memes, and dive into the Calvinverse.">
+  <meta name="keywords" content="Hobbes, Calvin and Hobbes, memecoin, cryptocurrency, memes, Solana blockchain, Calvinverse">
+  <title>Hobbes Memecoin - Tiger's Imaginative Quest</title>
+  <link rel="shortcut icon" href="./assets/logo.jpg" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@400;700&display=swap"
     rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
@@ -23,10 +23,9 @@
     }
 
     body {
-      background-color: #2a2a2a;
+      background-color: #1a1a1a;
       font-family: 'Montserrat', sans-serif;
-      color: #dddddd;
-      filter: grayscale(50%); /* Balanced grayscale */
+      color: #e0e0e0;
       display: flex;
       flex-direction: column;
     }
@@ -87,7 +86,7 @@
       transform: scale(1.05);
     }
 
-    .wojak-follower {
+    .tiger-follower {
       transition: transform 0.3s ease;
     }
 
@@ -98,26 +97,26 @@
       justify-content: center;
     }
 
-    .wojak-deco {
+    .tiger-deco {
       position: absolute;
       width: 30px;
       height: 30px;
-      background: radial-gradient(circle, #ffffff 50%, #000000 50%);
+      background: radial-gradient(circle, #ff8c00 50%, #000000 50%);
       border-radius: 50%;
       opacity: 0.3;
     }
 
     .bg-hero {
-      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/banner.jpg') center/cover fixed;
+      background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/assets/banner.png') center/cover fixed;
       background-attachment: fixed;
     }
 
     .bg-memes {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/art3.jpg') center/cover fixed;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/art3.png') center/cover fixed;
     }
 
     .bg-how-to-buy {
-      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/art7.jpg') center/cover fixed;
+      background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/art7.jpeg') center/cover fixed;
     }
 
     .bg-community {
@@ -133,7 +132,7 @@
     }
 
     .bg-dark {
-      background: linear-gradient(to bottom, #2a2a2a, #444444);
+      background: linear-gradient(to bottom, #1a1a1a, #333333);
     }
 
     .fallback-img {
@@ -152,7 +151,15 @@
     }
 
     .glow-button {
-      box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+      box-shadow: 0 0 15px rgba(255, 140, 0, 0.6);
+    }
+
+    .accent-orange {
+      color: #ff8c00;
+    }
+
+    .bg-card {
+      background-color: rgba(40, 40, 40, 0.8);
     }
 
     @media (max-width: 640px) {
@@ -167,7 +174,7 @@
         top: 100%;
         left: 0;
         right: 0;
-        background: #2a2a2a;
+        background: #1a1a1a;
         padding: 1.5rem;
         gap: 1rem;
         text-align: center;
@@ -194,11 +201,11 @@
   <nav class="fixed top-0 w-full bg-gradient-to-r from-gray-900 to-black z-50">
     <div class="container mx-auto px-4 py-3 flex justify-between items-center">
       <div class="flex items-center space-x-2">
-        <img src="/assets/logo.png" alt="Dogjak Wojak Dog Logo" class="w-8 h-8 animate-bounce"
+        <img src="/assets/logo.jpg" alt="Hobbes Tiger Logo" class="w-8 h-8 animate-bounce"
           onerror="this.style.display='none';">
-        <span class="text-lg font-['Press_Start_2P'] text-gray-400">Dogjak</span>
+        <span class="text-lg font-['Press_Start_2P'] accent-orange">Hobbes</span>
       </div>
-      <button id="nav-toggle" class="sm:hidden text-gray-400 focus:outline-none" aria-label="Toggle navigation menu">
+      <button id="nav-toggle" class="sm:hidden text-orange-500 focus:outline-none" aria-label="Toggle navigation menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
         </svg>
@@ -210,8 +217,8 @@
         <a href="#community" class="hover:text-gray-400">Community</a>
         <a href="#lore" class="hover:text-gray-400">Wojak Lore</a>
         <a href="#art-gallery" class="hover:text-gray-400">Art Gallery</a> -->
-        <a href="https://pump.fun/2USneHKxoWem2Xh6CNE6NUJdgvibb3DkH3JzFo42pump" target="_blank"
-          class="bg-gray-400 text-black px-4 py-2 rounded-full hover:bg-gray-300 glow-button">Buy Now</a>
+        <a href="https://pump.fun/3HRjHc7pFTnrnB4vmDUrig9JWkenJgCWHLrcEncMpump" target="_blank"
+          class="bg-orange-600 text-white px-4 py-2 rounded-full hover:bg-orange-500 glow-button">Buy Now</a>
       </div>
     </div>
   </nav>
@@ -219,49 +226,49 @@
   <!-- Hero Section -->
   <section id="home"
     class="min-h-screen flex flex-col justify-center items-center text-center px-4 pt-16 bg-hero relative">
-    <div class="wojak-deco" style="top: 10%; left: 10%;"></div>
-    <div class="wojak-deco" style="bottom: 15%; right: 15%;"></div>
-    <img src="/assets/logo.png" alt="Wojak Dog Hero Image" class="w-40 h-40 sm:w-48 sm:h-48 mb-4 animate-bounce"
+    <div class="tiger-deco" style="top: 10%; left: 10%;"></div>
+    <div class="tiger-deco" style="bottom: 15%; right: 15%;"></div>
+    <img src="/assets/logo.jpg" alt="Hobbes Tiger Hero Image" class="w-40 h-40 sm:w-48 sm:h-48 mb-4 animate-bounce"
       onerror="this.style.display='none';">
-    <h1 class="text-3xl sm:text-4xl font-['Press_Start_2P'] mb-2 text-gray-400 animate-fade-in">Dogjak Coin</h1>
-    <p class="text-lg sm:text-xl max-w-md mx-auto mb-4 text-gray-200 animate-fade-in">Wojak Dog's Meme Crypto Adventure! (Community Takeover)</p>
-    <p class="text-base sm:text-lg max-w-md mx-auto mb-6 animate-fade-in">Grab $DOGJAK before it memes to the moon! Feels bad man, but in the Wojak world, that's just another day in crypto. HODL through the dips, embrace the despair, and maybe moon someday.</p>
+    <h1 class="text-3xl sm:text-4xl font-['Press_Start_2P'] mb-2 accent-orange animate-fade-in">Hobbes Coin</h1>
+    <p class="text-lg sm:text-xl max-w-md mx-auto mb-4 text-gray-300 animate-fade-in">Hobbes the Tiger's Imaginative Crypto Adventure! (Community Takeover)</p>
+    <p class="text-base sm:text-lg max-w-md mx-auto mb-6 animate-fade-in">Grab $HOBBES before it pounces to the moon! Join the fun, embrace the imagination, and adventure through the Calvinverse with your tiger buddy.</p>
     <div class="flex flex-col sm:flex-row items-center gap-3 mb-6 animate-fade-in">
       <p id="contract-text" class="text-xs bg-gray-800 p-3 rounded-lg break-all max-w-xs sm:max-w-md">
-        2USneHKxoWem2Xh6CNE6NUJdgvibb3DkH3JzFo42pump</p>
+        3HRjHc7pFTnrnB4vmDUrig9JWkenJgCWHLrcEncMpump</p>
       <button onclick="copyContract()"
-        class="bg-gray-400 text-black px-4 py-2 rounded-full hover:bg-gray-300 glow-button font-['Press_Start_2P']">Copy</button>
+        class="bg-orange-600 text-white px-4 py-2 rounded-full hover:bg-orange-500 glow-button font-['Press_Start_2P']">Copy</button>
     </div>
-    <a href="https://dexscreener.com/solana/2USneHKxoWem2Xh6CNE6NUJdgvibb3DkH3JzFo42pump" target="_blank"
-      class="bg-gray-600 text-white px-8 py-4 rounded-full hover:bg-gray-500 hover-scale glow-button text-lg font-['Press_Start_2P'] animate-fade-in">Chart!</a>
+    <a href="https://dexscreener.com/solana/3HRjHc7pFTnrnB4vmDUrig9JWkenJgCWHLrcEncMpump" target="_blank"
+      class="bg-orange-600 text-white px-8 py-4 rounded-full hover:bg-orange-500 hover-scale glow-button text-lg font-['Press_Start_2P'] animate-fade-in">Chart!</a>
   </section>
 
   <!-- Meme Cave Section -->
   <section id="memes" class="py-16 bg-memes relative">
-    <div class="wojak-deco" style="bottom: 10%; left: 10%;"></div>
+    <div class="tiger-deco" style="bottom: 10%; left: 10%;"></div>
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 text-gray-400 animate-fade-in">Meme Cave</h2>
-      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">Wojak Dog's meme stash is pure black and white fire! Laugh, share, HODL! In the depths of market crashes and rug pulls, Wojak Dog sits there, staring blankly, wondering why he ever entered crypto. But hey, at least the memes are eternal.</p>
+      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 accent-orange animate-fade-in">Adventure Zone</h2>
+      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">Hobbes the Tiger's fun stash is full of colorful adventures! Laugh, share, pounce! In the world of imagination, Hobbes and Calvin tackle wild quests, from space explorations to dinosaur hunts.</p>
       <div class="gallery-grid max-w-4xl mx-auto">
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/meme-art1.png" alt="Wojak Dog in a meme adventure"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/meme-art1.jpg" alt="Hobbes Tiger in a meme adventure"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
-          <p class="mt-2">Meme #1: Wojak Dog buying the dip, again.</p>
+          <p class="mt-2">Adventure #1: Hobbes pouncing on Calvin.</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/meme-art2.png" alt="Wojak Dog in a meme adventure"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/meme-art2.jpg" alt="Hobbes Tiger in a meme adventure"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
-          <p class="mt-2">Meme #2: When the pump turns into a dump.</p>
+          <p class="mt-2">Adventure #2: When the imagination runs wild.</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/meme-art3.png" alt="Wojak Dog in a meme adventure"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/meme-art3.jpg" alt="Hobbes Tiger in a meme adventure"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
-          <p class="mt-2">Meme #3: HODLing through the bear market blues.</p>
+          <p class="mt-2">Adventure #3: Exploring through the woods.</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/meme-art4.png" alt="Wojak Dog in a meme adventure"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/meme-art4.jpg" alt="Hobbes Tiger in a meme adventure"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
-          <p class="mt-2">Meme #4: Wojak Dog vs. the whales.</p>
+          <p class="mt-2">Adventure #4: Hobbes vs. the monsters.</p>
         </div>
       </div>
     </div>
@@ -269,27 +276,27 @@
 
   <!-- How to Buy Section -->
   <section id="how-to-buy" class="py-16 bg-how-to-buy relative">
-    <div class="wojak-deco" style="bottom: 20%; right: 10%;"></div>
+    <div class="tiger-deco" style="bottom: 20%; right: 10%;"></div>
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 text-gray-400 animate-fade-in">How to Grab $DOGJAK
+      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 accent-orange animate-fade-in">How to Grab $HOBBES
       </h2>
-      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">Entering the Wojak Dog crypto quest? Follow these steps, but remember, in true Wojak fashion, expect the unexpected dips and dumps along the way.</p>
+      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">Joining Hobbes the Tiger's crypto quest? Follow these steps, and get ready for imaginative fun and wild adventures along the way.</p>
       <div class="max-w-2xl mx-auto space-y-6">
-        <div class="p-6 bg-gray-800 bg-opacity-80 rounded-xl animate-fade-in">
-          <h3 class="text-lg font-bold mb-2 text-gray-400">Step 1: Grab SOL</h3>
-          <p>Sign up on Binance, KuCoin, or Coinbase. Buy SOL with USD, EUR, or your currency. Wojak tip: Buy low, but it's always high when you buy.</p>
+        <div class="p-6 bg-card rounded-xl animate-fade-in">
+          <h3 class="text-lg font-bold mb-2 accent-orange">Step 1: Grab SOL</h3>
+          <p>Sign up on Binance, KuCoin, or Coinbase. Buy SOL with USD, EUR, or your currency. Hobbes tip: Pounce on the best deals!</p>
         </div>
-        <div class="p-6 bg-gray-800 bg-opacity-80 rounded-xl animate-fade-in">
-          <h3 class="text-lg font-bold mb-2 text-gray-400">Step 2: Wallet Up</h3>
-          <p>Get a Solana wallet like Phantom or Solflare for Web3 action. Secure it, or become a Wojak horror story.</p>
+        <div class="p-6 bg-card rounded-xl animate-fade-in">
+          <h3 class="text-lg font-bold mb-2 accent-orange">Step 2: Wallet Up</h3>
+          <p>Get a Solana wallet like Phantom or Solflare for Web3 action. Secure it, or face a tiger's roar!</p>
         </div>
-        <div class="p-6 bg-gray-800 bg-opacity-80 rounded-xl animate-fade-in">
-          <h3 class="text-lg font-bold mb-2 text-gray-400">Step 3: Move SOL</h3>
-          <p>Send your $SOL from the exchange to your wallet address. Double-check addresses; one typo and poof, Wojak despair.</p>
+        <div class="p-6 bg-card rounded-xl animate-fade-in">
+          <h3 class="text-lg font-bold mb-2 accent-orange">Step 3: Move SOL</h3>
+          <p>Send your $SOL from the exchange to your wallet address. Double-check addresses; one mistake and it's adventure over.</p>
         </div>
-        <div class="p-6 bg-gray-800 bg-opacity-80 rounded-xl animate-fade-in">
-          <h3 class="text-lg font-bold mb-2 text-gray-400">Step 4: Grab DOGJAK</h3>
-          <p>Connect wallet to Raydium or pump.fun, paste DOGJAK’s CA, and snag those tokens! Then watch the chart like a true Wojak, hoping for moon but preparing for rug.</p>
+        <div class="p-6 bg-card rounded-xl animate-fade-in">
+          <h3 class="text-lg font-bold mb-2 accent-orange">Step 4: Grab HOBBES</h3>
+          <p>Connect wallet to Raydium or pump.fun, paste HOBBES’s CA, and snag those tokens! Then watch the chart like a true adventurer, ready for the moon pounce.</p>
         </div>
       </div>
     </div>
@@ -297,38 +304,47 @@
 
   <!-- Community Section -->
   <section id="community" class="py-16 bg-community relative">
-    <div class="wojak-deco" style="bottom: 15%; left: 5%;"></div>
+    <div class="tiger-deco" style="bottom: 15%; left: 5%;"></div>
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 text-gray-400 animate-fade-in">Community</h2>
-      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">Join Wojak Dog's squad! X community coming soon. Share your losses, memes, and occasional wins in true Wojak spirit. We're all in this endless cycle together.</p>
-      <a href="https://x.com/" target="_blank"
-        class="bg-gray-600 text-white px-6 py-3 rounded-full hover:bg-gray-500 hover-scale glow-button font-['Press_Start_2P'] animate-fade-in">Join
-        X Soon</a>
+      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 accent-orange animate-fade-in">Community</h2>
+      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">
+        Join Hobbes the Tiger's wild pack! We're already roaming the jungle on Telegram — come share your adventures, memes, and imaginative stories in true Calvin and Hobbes spirit. The X community is coming soon, but the action is happening now on Telegram!
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center gap-6 mt-8">
+         <a href="https://t.me/+GAMDqhBJio05ZWY1" target="_blank"
+          class="bg-orange-600 text-white px-6 py-3 rounded-full hover:bg-orange-500 hover-scale glow-button font-['Press_Start_2P'] animate-fade-in">
+          Join Telegram Now
+        </a>
+        <a href="https://x.com/" target="_blank"
+          class="bg-orange-600 text-white px-6 py-3 rounded-full hover:bg-orange-500 hover-scale glow-button font-['Press_Start_2P'] animate-fade-in">
+          Join X Soon
+        </a>
+      </div>
     </div>
   </section>
-
+  
   <!-- Wojak Lore Section (New Content) -->
   <section id="lore" class="py-16 bg-lore relative">
-    <div class="wojak-deco" style="top: 25%; right: 10%;"></div>
+    <div class="tiger-deco" style="top: 25%; right: 10%;"></div>
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 text-gray-400 animate-fade-in">Wojak Dog Lore</h2>
-      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">Dive deeper into the Wojak Dog universe. Born from the ashes of failed trades and endless scrolling, Wojak Dog represents the everyman in crypto – hopeful yet perpetually disappointed. From moon dreams to rug realities, here's more lore:</p>
+      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 accent-orange animate-fade-in">Hobbes Lore</h2>
+      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">Dive deeper into the Hobbes the Tiger universe. As Calvin's best friend and stuffed tiger come to life, Hobbes brings philosophy, fun, and wild imagination to every adventure. From snowball fights to time travel, here's more lore:</p>
       <div class="max-w-2xl mx-auto space-y-6">
-        <div class="p-6 bg-gray-800 bg-opacity-80 rounded-xl animate-fade-in">
-          <h3 class="text-lg font-bold mb-2 text-gray-400">The Origin</h3>
-          <p>Wojak Dog started as a simple pup in the meme world, but crypto turned him into a hardened trader. Always buying high, selling low – classic Wojak moves.</p>
+        <div class="p-6 bg-card rounded-xl animate-fade-in">
+          <h3 class="text-lg font-bold mb-2 accent-orange">The Origin</h3>
+          <p>Hobbes started as a stuffed tiger, but in Calvin's world, he's a living, wise-cracking companion ready for any quest.</p>
         </div>
-        <div class="p-6 bg-gray-800 bg-opacity-80 rounded-xl animate-fade-in">
-          <h3 class="text-lg font-bold mb-2 text-gray-400">The Great Dip</h3>
-          <p>Once, Wojak Dog went all-in on a hype coin. It dipped harder than his spirits. Now he wanders the blockchain, seeking redemption.</p>
+        <div class="p-6 bg-card rounded-xl animate-fade-in">
+          <h3 class="text-lg font-bold mb-2 accent-orange">The Great Adventures</h3>
+          <p>Once, Hobbes and Calvin built a time machine from a cardboard box. They traveled through eras, always landing in fun chaos.</p>
         </div>
-        <div class="p-6 bg-gray-800 bg-opacity-80 rounded-xl animate-fade-in">
-          <h3 class="text-lg font-bold mb-2 text-gray-400">Moon Visions</h3>
-          <p>Despite the despair, Wojak Dog dreams of mooning. Join the pack and maybe, just maybe, we'll all make it... or not.</p>
+        <div class="p-6 bg-card rounded-xl animate-fade-in">
+          <h3 class="text-lg font-bold mb-2 accent-orange">Moon Visions</h3>
+          <p>Hobbes dreams of epic pounces to the moon. Join the pack and turn imagination into reality... or at least crypto gains!</p>
         </div>
-        <div class="p-6 bg-gray-800 bg-opacity-80 rounded-xl animate-fade-in">
-          <h3 class="text-lg font-bold mb-2 text-gray-400">Community Tales</h3>
-          <p>Share your own Wojak stories in the community. From epic FOMOs to brutal rugs – we're all Wojaks here.</p>
+        <div class="p-6 bg-card rounded-xl animate-fade-in">
+          <h3 class="text-lg font-bold mb-2 accent-orange">Community Tales</h3>
+          <p>Share your own Hobbes-inspired stories in the community. From wild inventions to philosophical debates – we're all tigers at heart.</p>
         </div>
       </div>
     </div>
@@ -336,73 +352,73 @@
 
   <!-- Art Gallery Section -->
   <section id="art-gallery" class="py-16 bg-art-gallery relative">
-    <div class="wojak-deco" style="top: 20%; right: 15%;"></div>
+    <div class="tiger-deco" style="top: 20%; right: 15%;"></div>
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 text-gray-400 animate-fade-in">Art Gallery</h2>
-      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">All Wojak Dog's black and white images and arts! Each piece captures the essence of crypto struggles – from euphoria to despair. More arts added for your viewing pleasure, or misery.</p>
+      <h2 class="text-2xl sm:text-3xl font-['Press_Start_2P'] mb-6 accent-orange animate-fade-in">Art Gallery</h2>
+      <p class="text-lg max-w-md mx-auto mb-8 animate-fade-in">All Hobbes the Tiger's colorful images and arts! Each piece captures the essence of imagination and fun – from pounces to explorations. More arts added for your viewing pleasure.</p>
       <div class="gallery-grid max-w-5xl mx-auto">
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/art1.jpg" alt="Wojak Dog art 1"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/art1.jpeg" alt="Hobbes Tiger art 1"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
-          <p class="mt-2">Art #1: The Eternal HODLer</p>
+          <p class="mt-2">Art #1: The Eternal Pouncer</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/art2.jpg" alt="Wojak Dog art 2"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/art2.jpg" alt="Hobbes Tiger art 2"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Art #2: FOMO Frenzy</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/art3.jpg" alt="Wojak Dog art 3"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/art3.jpg" alt="Hobbes Tiger art 3"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
-          <p class="mt-2">Art #3: Rug Pull Regret</p>
+          <p class="mt-2">Art #3: Adventure Awaits</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/art4.jpg" alt="Wojak Dog art 4"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/art4.jpg" alt="Hobbes Tiger art 4"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Art #4: Moon Dreamer</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/art5.jpg" alt="Wojak Dog art 5"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/art5.jpg" alt="Hobbes Tiger art 5"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Art #5: Whale Watching</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/art6.jpg" alt="Wojak Dog art 6"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/art6.jpg" alt="Hobbes Tiger art 6"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Art #6: Bear Market Blues</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/art7.jpg" alt="Wojak Dog art 7"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/art7.jpg" alt="Hobbes Tiger art 7"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Art #7: Pump and Dump</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/banner.jpg" alt="Wojak Dog banner"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/banner.png" alt="Hobbes Tiger banner"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
-          <p class="mt-2">Banner: Wojak Pack United</p>
+          <p class="mt-2">Banner: Tiger Pack United</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/logo.png" alt="Wojak Dog logo"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/logo.jpg" alt="Hobbes Tiger logo"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
-          <p class="mt-2">Logo: The Iconic Stare</p>
+          <p class="mt-2">Logo: The Iconic Pounce</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/meme-art1.png" alt="Wojak Dog meme art 1"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/meme-art1.jpg" alt="Hobbes Tiger meme art 1"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Meme Art #1: Daily Grind</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/meme-art2.png" alt="Wojak Dog meme art 2"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/meme-art2.jpg" alt="Hobbes Tiger meme art 2"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Meme Art #2: Lost Gains</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/meme-art3.png" alt="Wojak Dog meme art 3"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/meme-art3.jpg" alt="Hobbes Tiger meme art 3"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Meme Art #3: Hopeful Eyes</p>
         </div>
-        <div class="p-4 bg-gray-800 rounded-xl hover-scale animate-fade-in">
-          <img src="/assets/meme-art4.png" alt="Wojak Dog meme art 4"
+        <div class="p-4 bg-card rounded-xl hover-scale animate-fade-in">
+          <img src="/assets/meme-art4.jpg" alt="Hobbes Tiger meme art 4"
             class="w-full h-48 object-cover rounded-lg" loading="lazy" onerror="this.style.display='none';">
           <p class="mt-2">Meme Art #4: Eternal Wait</p>
         </div>
@@ -414,19 +430,19 @@
   <!-- Footer -->
   <footer class="py-8 bg-gray-900 text-center">
     <div class="container mx-auto px-4">
-      <p class="text-sm mb-4">© 2025 Dogjak Coin. Wojak Dog Memes Forever! In the end, we're all just Wojaks trying to make it in this crazy world.</p>
+      <p class="text-sm mb-4">© 2025 Hobbes Coin. Tiger Adventures Forever! In the end, we're all just imaginative explorers trying to pounce through this crazy world.</p>
       <div class="flex flex-wrap justify-center gap-4 text-sm">
-        <a href="#how-to-buy" class="hover:text-gray-400">How to Buy</a>
-        <a href="#memes" class="hover:text-gray-400">Meme Cave</a>
-        <a href="#lore" class="hover:text-gray-400">Wojak Lore</a>
-        <a href="#art-gallery" class="hover:text-gray-400">Art Gallery</a>
+        <a href="#how-to-buy" class="hover:text-orange-500">How to Buy</a>
+        <a href="#memes" class="hover:text-orange-500">Adventure Zone</a>
+        <a href="#lore" class="hover:text-orange-500">Hobbes Lore</a>
+        <a href="#art-gallery" class="hover:text-orange-500">Art Gallery</a>
       </div>
     </div>
   </footer>
 
   <!-- Wojak Follower -->
-  <img src="/assets/logo.png" alt="Wojak Dog Follower"
-    class="fixed bottom-4 right-4 w-12 h-12 sm:w-14 sm:h-14 z-40 wojak-follower" onerror="this.style.display='none';">
+  <img src="/assets/logo.jpg" alt="Hobbes Tiger Follower"
+    class="fixed bottom-4 right-4 w-12 h-12 sm:w-14 sm:h-14 z-40 tiger-follower" onerror="this.style.display='none';">
 
   <script>
     // Smooth scrolling
@@ -448,7 +464,7 @@
 
     // Wojak follower movement
     window.addEventListener('scroll', () => {
-      const follower = document.querySelector('.wojak-follower');
+      const follower = document.querySelector('.tiger-follower');
       follower.style.transform = `translateY(${window.scrollY * 0.2}px)`;
     });
 
